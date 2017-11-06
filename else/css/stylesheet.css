@@ -1,0 +1,161 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-image: url(/else/images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.nav-container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.red-button {
+  background-color: #F44336 !important;
+  transition: .2s ease-out;
+  cursor: pointer;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.red-button:hover {
+  background-color: #ff5a4e !important;
+}
+.green-button {
+  background-color: #38cc3e !important;
+  transition: .2s ease-out;
+  cursor: pointer;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.green-button:hover {
+  background-color: #54dc5a !important;
+}
+.black-button {
+  background-color: #212121 !important;
+  transition: .2s ease-out;
+  cursor: pointer;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.black-button:hover {
+  background-color: #2b2b2b !important;
+}
+.bet-balance {
+  padding: .5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.bet-balance-red {
+  color: #F44336 !important;
+}
+.bet-balance-green {
+  color: #38cc3e !important;
+}
+.bet-balance-black {
+  color: #bdbdbd !important;
+}
+.highest-color {
+  border: 1px solid #efefef;
+  border-color: #555;
+  background-color: #121212;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.progress {
+    position: relative;
+    height: 40px;
+    display: center;
+    width: calc(100% - 30px);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid #efefef;
+    margin-left: 15px;
+}
+.progress .determinate {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    background-color: #F44336 !important;
+    transition: width .3s linear;
+    color: white;
+}
+.rolling-time {
+  margin-left: auto;
+  margin-right: auto;
+}
+.chat-button {
+  background-color: #212121 !important;
+}
+.countdown {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.last-rolls {
+  color: white;
+}
+.last-rolls-btn {
+  margin-left: 4px;
+  margin-right: 4px;
+  box-shadow: 0 0 2px #ddd;
+}
+.last-rolls-red {
+  background-color: #F44336 !important;
+}
+.last-rolls-green {
+  background-color: #38cc3e !important;
+}
+.last-rolls-black {
+  background-color: #212121 !important;
+}
+.group, .reel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.reel {
+    transition-timing-function: cubic-bezier(.165,.84,.44,1);
+}
+.reel-item {
+    line-height: 70px;
+    height: 70px;
+    width: 70px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+}
+.reel-item.black {
+    background-color: #212121 !important;
+}
+.reel-item.green {
+    background-color: #38cc3e !important;
+}
+.reel-item.red {
+    background-color: #d3433c;
+}
+.indicator {
+    position: absolute;
+    left: calc(50% - .1875rem);
+    width: .1875rem;
+    height: 80px;
+    background: #ffffff;
+    z-index: 2;
+    margin-top: -5px;
+}
+.roll-reel {
+  display: block;
+max-width: 100%;
+box-shadow: 0 0 1px #717171;
+overflow: hidden;
+}
